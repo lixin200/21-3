@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML常用元素练习</title>
+    <style>
+      h1 {
+        color: red;
+        text-align: center;
+      }
+      h2 {
+        font-family: "Ma Shan Zheng";
+      }
+      .eng {
+        font-family: AdobeGothicStd;
+      }
+      
+      h1 a:visited {
+        color: red;
+      }
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: purple;
+      }
+      #location {
+        font-family: serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://w3.org">HTML</a>常用元素练习</h1>
+    <p>
+      <a href="https://so.gushiwen.cn/shiwenv_d59ec5d6c91c.aspx">噫吁嚱</a
+      >，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。
+      西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。
+      黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹
+  </p>
+    <p>
+      <img src="https://q8.itc.cn/images01/20240130/a11099c87a2742d9bda37c1cd5fb3576.jpeg" alt="" />
+    </p>
+    <ol>
+      <li>大一</li>
+      <li>大二</li>
+      <li>大三</li>
+    </ol>
+    <h2 class="eng">李白</h2>
+    <h2>蜀道难，难于上青天</h2>
+
+    <p>蚕丛及鱼凫，开国何茫然！</p>
+
+    <h2 id="location">剑门关</h2>
+    <p>
+      噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。
+      西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。
+      黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹
+    </p>
+  </body>
+</html>
