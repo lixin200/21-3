@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 盒模型、背景、文字排版</title>
+    <style>
+        body{
+            width: 570px;
+            margin:0 auto;
+            padding: 0;
+        }
+        div     {
+            background-image: linear-gradient(90deg,rgb(223, 151, 205),rgb(59, 185, 194));
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-bottom: 4em;
+            margin-left: auto;
+            margin-right: auto;
+
+            border: dashed 1px rgb(235, 235, 7);
+            padding: 20px;
+            border-radius: 10px 20px;
+            box-shadow: 3px 3px 10px rgb(206, 27, 57);
+        }
+        div p{
+            margin: 0;
+            line-height: 200px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 900;
+            color: rgb(32, 10, 226);
+            font-family: "Bernard MT";
+        }
+        text{
+            text-indent: 2em;
+            line-height: 1.7;
+            font-family: "微软雅黑";
+            font-size: 32px;
+            font-weight: 300;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+        span{
+            text-decoration: rgb(10, 10, 10) wavy underline;
+            background-color: rgb(152, 171, 224);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>蜀道难</p>
+    </div>
+    <p class="text">
+      噫嘘唏 <span>危乎高哉！</span>
+    蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。
+        西当太白有鸟道，可以横绝峨眉巅。地 崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。
+        黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹
+    </p>
+</body>
+</html>
