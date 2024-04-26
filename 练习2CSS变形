@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>CSS变形示例</title>  
+<style>  
+  /* CSS样式放在这里 */  
+  .box {  
+    width: 200px;  
+    height: 200px;  
+    background-color: #f06d06;  
+    color: white;  
+    text-align: center;  
+    line-height: 200px; /* 垂直居中文字 */  
+    margin: 50px;  
+    /* 添加过渡效果 */  
+    transition: transform 2s;  
+  }  
+  
+  /* 悬停时应用变形 */  
+  .box:hover {  
+    /* 组合多个转换 */  
+    transform: translate(50px, 100px) rotate(45deg) scale(1.2);  
+  }  
+  
+  /* 点击时应用变形 */  
+  .box:active {  
+    /* 改变转换原点 */  
+    transform-origin: top left;  
+    /* 应用倾斜和缩放 */  
+    transform: skew(20deg, 10deg) scale(1.1);  
+  }  
+</style>  
+</head>  
+<body>  
+  
+<div class="box">  
+  点击并悬停我，看我变形！  
+</div>  
+  
+</body>  
+</html>
