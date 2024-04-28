@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>随机人物生成器</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #character {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  h2 {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+</style>
+</head>
+<body>
+
+<div id="character">
+  <h2 id="generateButton">点击生成随机人物</h2>
+  <div id="characterInfo"></div>
+</div>
+
+<script>
+// 定义人物的属性和可能的值
+const backgrounds = ['城市', '乡村', '海洋', '山脉', '丛林'];
+const talents = ['文学', '艺术', '科学', '武术', '商业'];
+const personalities = ['外向', '内向', '冷静', '热情', '和蔼'];
+const charms = ['普通', '高超', '低下', '超凡', '一般'];
+
+// 创建生成人物信息的函数
+function generateCharacter() {
+  return {
+    background: backgrounds[Math.floor(Math.random() * backgrounds.length)],
+    talent: talents[Math.floor(Math.random() * talents.length)],
+    personality: personalities[Math.floor(Math.random() * personalities.length)],
+    charm: charms[Math.floor(Math.random() * charms.length)],
+  };
+}
+
+// 显示生成的 character
+function displayCharacter(character) {
+  document.getElementById('characterInfo').innerHTML = `
+    <h2>随机人物信息</h2>
+    <p>出身：${character.background}</p>
+    <p>禀赋：${character.talent}</p>
+    <p>性格：${character.personality}</p>
+    <p>魅力：${character.charm}</p>
+  `;
+}
+
+// 当文档加载完毕时，初始化页面
+document.addEventListener('DOMContentLoaded', function() {
+  const character = generateCharacter();
+  displayCharacter(character);
+  
+  // 为标题添加点击事件监听器
+  document.getElementById('generateButton').addEventListener('click', function() {
+    const character = generateCharacter();
+    displayCharacter(character);
+  });
+});
+</script>
+
+</body>
+</html>
+
+
+
+
